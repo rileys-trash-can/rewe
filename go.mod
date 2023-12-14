@@ -1,4 +1,4 @@
-module github.com/rileys-trash-can/rewecli
+module github.com/rileys-trash-can/rewe
 
 go 1.21.5
 

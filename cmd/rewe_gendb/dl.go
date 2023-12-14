@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	_ "github.com/mattn/go-sqlite3"
 	"github.com/rileys-trash-can/postalcode"
-	"github.com/rileys-trash-can/rewecli"
+	"github.com/rileys-trash-can/rewe"
 
 	"fmt"
 	"log"
