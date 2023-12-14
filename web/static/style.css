@@ -1,0 +1,113 @@
+div.imprint {
+	color: darkgray;
+	font-size: 0.6em;
+	padding-bottom: 0;
+	margin-bottom: 0;
+
+	display: flex;
+	justify-content: right;
+}
+
+hr.imprint {
+	margin-top: 0.1em;
+}
+
+        .frame {
+            width: 100%;
+            overflow: auto;
+
+			position: relative;
+        }
+
+        .scrollable-list {
+            white-space: nowrap;
+        }
+
+        .card-text {
+			word-wrap: break-word;
+        }
+        
+        .card {
+            flex-direction: column;
+
+			margin-top: 10px;
+			margin-bottom: 10px;
+            display: inline-flex;
+            width: 200px;
+            margin-right: 10px;
+			overflow: hidden; /* hide rest of badge */
+
+            white-space: normal;
+        }
+
+        .double-wide {
+        	width: 300px;
+        }
+
+        .card-150w {
+        	width: calc(150px * 1.5);
+        }
+
+        .diagonal-banner {
+		    transform:rotate(45deg);
+			-ms-transform:rotate(45deg); /* IE 9 */
+
+			z-index: 1;
+
+			position: absolute;
+		    top: 0;
+
+			text-align: center;
+			justify-content: center;
+		
+		    background-color: #007bff;
+		}
+
+		.banner-worst {
+		    right: -2.5em;
+		    width: 10em;
+		    height: 2em;			
+
+		    background-color: red;
+		    color: darkred;
+		}
+		
+		.banner-madeup {
+			right: -3em;
+		    width: 14em;
+		    height: 2em;
+
+		    background-color: green;
+		    color: darkgreen;
+		}
+	
+		.banner-content {
+			position: absolute;
+
+			left: 2em;
+			width: calc(100% - 2em);
+
+			/* i love centering in css */ 
+			text-align: center;
+			top: 50%;
+			-ms-transform: translateY(-50%);
+			transform: translateY(-50%);
+		}
+
+		.banner-madeup > .banner-content {
+			left: 4em;
+			width: calc(100% - 4em);			
+		}
+
+		footer {
+			border-top-color: lightgray;
+			border-top-style: solid;
+			border-top-width: 1px;
+
+			width: 100%;
+			margin-top: .1em;
+			padding-top: .5em;
+			padding-bottom: .5em;
+			font-size: .8em;
+			color: darkgray;
+		}

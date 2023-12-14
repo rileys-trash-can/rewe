@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e926.de - REWE</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/bs.css">
+	<link rel="stylesheet" href="static/bs-icons.css">
+	<link rel="stylesheet" href="static/style.css">
+
+    <style r>
+    </style>
+</head>
+
+<body>
+    <div class="container text-center mt-5">
+        <h1>REWE DB</h1>
+        <p class="lead">Yes, about that supermarket chain</p>
+        <hr>
+
+        <p>
+        	Some stuff for interfacing with the Rewe websize:
+        </p>
+
+        <hr class="mt-5">
+
+        <p class="lead mt-5">Stuff you can do:</p>
+        <div class="frame mt-4">
+            <div class="scrollable-list">
+                <div class="card double-wide">
+                    <div class="card-body bg-light">
+                        <h5 class="card-title">db</h5>
+                        <p class="card-text">
+							Database with all of them rewes:
+						</p>
+						<a href="/rewe.sqlite">
+							<button class="btn btn-primary">Download</button>
+						</a>
+                </div>
+                </div>
+                <div class="card double-wide">
+                    <div class="card-body bg-light">
+                        <h5 class="card-title">REST api client</h5>
+                        <p class="card-text">
+							interfaces with their website
+						</p>
+						<a href="//pkg.go.dev/github.com/rileys-trash-can/rewecli">
+							<button class="btn btn-primary">pkg.go.dev</button>
+						</a>
+                </div>
+                </div>
+                <div class="card double-wide">
+                    <div class="card-body">
+                        <h5 class="card-title">Product Finder</h5>
+                        <p class="card-text">
+							Can find all shops stocking a product in your area or country-wide
+                        </p>
+						<a href="/finder.html">
+							<button class="btn btn-primary">check out <i class="bi bi-box-arrow-up-right"></i></button>
+						</a>
+                    </div>
+                </div>
+				<!-- add cards here -->
+            </div>
+        </div>
+
+        <hr class="mt-5">
+		<a id="handmade">
+			<p class="lead mt-5">100% Handmade</p>
+		</a>
+		
+        <hr class="mt-5">
+
+        <p class="lead mt-5">Checkout the source on
+	        <a style="padding-left: .2em" href="//github.com/rileys-trash-can/rewecli">
+	        	<button class="btn btn-secondary"><i class="bi bi-github"></i></button>
+	        </a>
+		</p>
+
+		<footer style="margin-top: 2em">
+			Made with
+			<i class="bi bi-heart-fill" style="color: red"></i>
+			by Riley © 2023
+			&lt;riley (at) e926 (dot) de &gt;
+		</footer>
+    </div>
+</body>
+
+</html>
