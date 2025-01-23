@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map with Pins</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 1600px;
+            width: 100%;
+        }
+
+        body {
+        	height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Map of rewes in germany</h1>
+    <div id="map"></div>
+
+    <script src="leaflet.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Initialize the map
+        const markericon = L.icon({
+        	iconUrl: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAFUlEQVR42mNsEGH4z0AEYBxVSF+FALqhD8k0pWKoAAAAAElFTkSuQmCC',
+			iconSize: [5, 5],
+        });
+
+        var map = L.map('map').setView([51.04104611377299, 10.368363772119027], 7.2);
+
+        // Use OpenStreetMap as the tile layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+		var rewelayer = L.layerGroup();
+
+		for (let i = 0; i < pos.length; i += 3) {
+		    let lat = pos[i], 
+		    	lon = pos[i+1], 
+		    	id = pos[i+2];
+
+			console.log("adding pin", i/3, "of", pos.length/3)
+		    L.marker([lat, lon], {
+		    	icon: markericon,
+		    }).addTo(rewelayer)
+		    	.bindPopup(`wwident ${id}`)
+		    	.openPopup()
+		}
+
+		console.log("adding to map")
+		rewelayer.addTo(map);
+    </script>
+</body>
+</html>

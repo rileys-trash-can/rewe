@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/rileys-trash-can/rewecli"
+	"github.com/rileys-trash-can/rewe"
 
 	"log"
 	"os"
